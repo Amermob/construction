@@ -3,17 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     text-transform: capitalize;
-    /*font-family: 'Baloo Bhaijaan 2', sans-serif;
-    */
-    /*font-family: 'Rethink Sans', sans-serif;
-    */
-    /*font-family: 'Roboto', sans-serif;
-    */
-    /*font-family: 'Rubik', sans-serif;
-    */
     font-family: 'Ubuntu', sans-serif;
-    /*background-color: #7fcdee;
-    */
     scroll-behavior: smooth;
 
 }
@@ -43,7 +33,10 @@ nav {
 
     nav li {
         font-size: 20px !important;
+    }
 
+    .main {
+        width: 100%;
     }
 }
 
@@ -225,10 +218,17 @@ li a {
 
 @media (max-width:280px) {
     .location iframe {
-        height: 260px !important;
-        width: 260px !important;
+        height: 150px !important;
+        width: 150px !important;
     }
 }
+
+/* @media (max-width:200px) {
+    .location iframe {
+        height: 180px !important;
+        width: 180px !important;
+    }
+} */
 
 .header {
     text-align: center;
