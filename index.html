@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&family=Rethink+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>مؤسسة صباحات العيد لهدم المباني</title>
@@ -25,10 +26,14 @@
             </div>
             <nav>
                 <ul class="list">
-                    <li><a href="#WhoWeAre">Who we are?</a></li>
-                    <li><a href="#our">our services</a></li>
-                    <li><a href="#pic">Gallery</a></li>
-                    <li><a href="#contact">contact us</a></li>
+                    <li><a data-i18n="whoWeAre" href="#WhoWeAre">Who we are?</a></li>
+                    <li><a data-i18n="our" href="#our">our services</a></li>
+                    <li><a data-i18n="pic" href="#pic">Gallery</a></li>
+                    <li><a data-i18n="contact" href="#contact">contact us</a></li>
+                    <select id="language">
+                        <option data-i18n="arabic" id="btnArabic" data-i18n="ar" value="ar">Arabic</option>
+                        <option data-i18n="english" id="btnEnglish" data-i18n="en" selected value="en">English</option>
+                    </select>
                 </ul>
             </nav>
             <div class="dots">
@@ -49,14 +54,15 @@
     <div id="WhoWeAre" class="info">
         <div class="header">
             <div class="h-box">
-                <h2><img src=".//img for show/construction-worker.png" alt="">who we are? <img
-                        src=".//img for show/construction-worker.png" alt=""></h2>
+                <img src=".//img for show/construction-worker.png" alt="">
+                <h2 data-i18n="whoWeAre"> who we are?
+                </h2><img src=".//img for show/construction-worker.png" alt="">
             </div>
             <div class="text">
-                <p>نتشرف نحن مؤسسة صباحات العيد للمقاولات بالقيام باعمال الهدم و لدينا فريق متخصص و ذو خبره في اعمال
-                    الهدم واخذ اعلى وسائل السلامه و عدم الاضرار بالمباني المجاوره لاعمال الهدم ياحترافية نقدم تقييم
-                    للمخلفات منافس عن السوق نتشرف بتواصلكم 0555931369 واتس اب او اتصال كما لدينا المعدات الممكنة لانجاز
-                    العمل بأسرع وقت نفخر بانجازتنا بعد رضاكم عن اعمالنا </p>
+                <p data-i18n="summery">We, Sabahat Al-Eid Contracting Establishment, are honored to carry out demolition
+                    work with the help of a specialized and experienced team in demolition work taking the highest
+                    safety measures and not damaging the buildings adjacent to the demolition work. We provide a waste
+                    assessment that is competitive with the market.</p>
                 <img src=".//img for show/pexels-kawser-hamid-176342.jpg" alt="">
             </div>
         </div>
@@ -65,27 +71,27 @@
 
     <div id="our" class="our-ser">
         <div class="our-header">
-            <div class="h-box">
-                <h2><img src=".//img for show/construction-worker.png" alt="">our services <img
-                        src=".//img for show/construction-worker.png" alt=""></h2>
+            <div class="h-box"><img src=".//img for show/construction-worker.png" alt="">
+                <h2 data-i18n="our">our services </h2>
+                <img src=".//img for show/construction-worker.png" alt="">
             </div>
             <div class="text">
                 <img src=".//img for show/pexels-sevenstorm-juhaszimrus-439416.jpg" alt="">
-                <p>نتشرف نحن مؤسسة صباحات العيد للمقاولات بالقيام باعمال الهدم و لدينا فريق متخصص و ذو خبره في اعمال
-                    الهدم واخذ اعلى وسائل السلامه و عدم الاضرار بالمباني المجاوره لاعمال الهدم ياحترافية نقدم تقييم
-                    للمخلفات منافس عن السوق نتشرف بتواصلكم 0555931369 واتس اب او اتصال كما لدينا المعدات الممكنة لانجاز
-                    العمل بأسرع وقت نفخر بانجازتنا بعد رضاكم عن اعمالنا </p>
+                <p data-i18n="whatWeDo">
+                    We provide logistical services that accompany the demolition work in transporting waste and
+                    supervising the work in a distinguished manner, taking into account those neighboring buildings with
+                    experienced team that strives for the best</p>
             </div>
         </div>
     </div>
     <div id="pic" class="gallary">
         <div class="h-box">
-            <h2><img src=".//img for show/construction-worker.png" alt="">our Gallery <img
-                    src=".//img for show/construction-worker.png" alt=""></h2>
+            <img src=".//img for show/construction-worker.png" alt="">
+            <h2 data-i18n="pic">our Gallery</h2>
+            <img src=".//img for show/construction-worker.png" alt="">
         </div>
         <ul class="g-img">
             <img src=".//img/2023-07-08 (1).jpg" alt="">
-            <img src=".//img/2023-07-08 (2).jpg" alt="">
             <img src=".//img/2023-07-08 (3).jpg" alt="">
             <img src=".//img/2023-07-08 (4).jpg" alt="">
             <img src=".//img/2023-07-08 (5).jpg" alt="">
@@ -94,9 +100,8 @@
     </div>
 
     <div id="contact" class="contact">
-        <div class="h-box">
-            <h2><img src=".//img for show/construction-worker.png" alt=""> Contact us <img
-                    src=".//img for show/construction-worker.png" alt=""></h2>
+        <div class="h-box"><img src=".//img for show/construction-worker.png" alt="">
+            <h2 class="h2"> Contact us</h2> <img src=".//img for show/construction-worker.png" alt="">
         </div>
         <div class="location">
             <iframe
@@ -105,7 +110,8 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
             <div class="box">
                 <div class="g-text">
-                    <h2><i class="fa-solid fa-location-dot"></i> Aluraija Al Gharbiyah, Riyadh</h2>
+                    <h2 data-i18n="location"><i class="fa-solid fa-location-dot"></i> Suhayb Ibn Sinan, Aluraija Al
+                        Gharbiyah, Riyadh 14913</h2>
                     <h2><i class="fa-solid fa-phone"></i> 0555931369</h2>
                     <h2><img src=".//img for show/gmail.png" alt=""> alzaheri2022@gmail.com</h2>
                     <h2>whatsapp:
@@ -117,14 +123,18 @@
         </div>
     </div>
     <div class="footer">
-        <h1>All Right reserved 2023</h1>
         <ul class="l-footer">
-            <li><a href="#WhoWeAre">Who we are?</a></li>
-            <li><a href="#our">our services</a></li>
-            <li><a href="#pic">Gallery</a></li>
-            <li><a href="#contact">contact us</a></li>
+            <li><a data-i18n="whoWeAre" href="#WhoWeAre">Who we are?</a></li>
+            <li><a data-i18n="our" href="#our">our services</a></li>
+            <li><a data-i18n="pic" href="#pic">Gallery</a></li>
+            <li><a data-i18n="contact" href="#contact">contact us</a></li>
+            <select id="footer-lang">
+                <option data-i18n="arabic" id="btnArabic" data-i18n="ar" value="ar">Arabic</option>
+                <option data-i18n="english" id="btnEnglish" data-i18n="en" selected value="en">English</option>
+            </select>
         </ul>
     </div>
+    <script src="./main.js/main.js"></script>
 </body>
 
 </html>
